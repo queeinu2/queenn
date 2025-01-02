@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ecb4d1; /* Warna latar belakang header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Membuat header responsif */
+}
+
+.logo img {
+    width: 100px; /* Ukuran logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks menu */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ec7eb6; /* Warna saat hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff; /* Warna latar belakang konten utama */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 5px #0000001a; /* Bayangan halus */
+    margin: 20px; /* Margin di sekitar konten utama */
+}
+
+h1 {
+    color: #96b9ec; /* Warna teks judul */
+    text-align: center;
+    margin-bottom: 20px; /* Jarak bawah judul */
+    animation: move 2s infinite alternate; /* Menambahkan animasi */
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0); /* Posisi awal */
+    }
+    100% {
+        transform: translateY(-20px); /* Posisi akhir (naik) */
+    }
+}
+
+p {
+    line-height: 1.6; /* Jarak antar baris */
+    margin-bottom: 15px; /* Jarak bawah paragraf */
+    color: #6694da;
+}
+
+ol {
+    margin-left: 20px; /* Margin kiri untuk daftar terurut */
+}
+
+footer {
+    background-color: #ece6b4; /* Warna latar belakang footer */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white; /* Warna teks footer */
+}
+
+        /* Media Queries untuk responsivitas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px; /* Ukuran font lebih kecil untuk layar kecil */
+            }
+
+            main h4 {
+                font-size: 16px; /* Ukuran font lebih kecil untuk teks deskripsi */
+            }
+
+            nav ul {
+                flex-direction: column; /* Mengubah menu menjadi kolom */
+                align-items: center; /* Menyelaraskan item menu ke tengah */
+            }
+
+            nav ul li {
+                margin: 10px 0; /* Jarak antar item menu */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px; /* Ukuran font lebih kecil untuk layar sangat kecil */
+            }
+
+            main h4 {
+                font-size: 14px; /* Ukuran font lebih kecil untuk teks deskripsi */
+            }
+
+            nav {
+                font-size: 14px; /* Ukuran font menu lebih kecil */
+            }
+        }
